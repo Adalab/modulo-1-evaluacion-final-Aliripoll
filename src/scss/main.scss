@@ -8,3 +8,58 @@
 @import 'pages/index';*/
 
 @import "core/reset";
+
+:root {
+  font-family: "Roboto";
+}
+
+.image_container {
+  background-image: url("../images/cover.jpeg");
+  max-width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  /*flex-direction: column;
+  justify-content: flex-end;*/
+}
+.header_menu {
+  width: 30px;
+}
+
+.header_menu_container {
+  background-image: url("../images/ico-menu.svg");
+  background-color: #0271bc;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 22px;
+  width: 37px;
+  position: fixed;
+}
+
+.header_text_container {
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+  gap: 15px;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+.h1_text {
+  font-size: 42px;
+  font-family: "RobotoSlab";
+  text-transform: uppercase;
+}
+
+.button_circle {
+  background-image: url("../images/ico-scroll-down.svg");
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: 0 auto;
+}
