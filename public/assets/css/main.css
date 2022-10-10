@@ -80,8 +80,7 @@
   font-family: "RobotoSlab";
   font-weight: bold;
   text-transform: capitalize;
-  word-spacing: 5vw;
-  /*REVISAR, NO es la mejor manera*/ }
+  /*word-spacing: 5vw; /*REVISAR, NO es la mejor manera*/ }
 
 .third_text {
   color: #4a4a4a;
@@ -106,8 +105,8 @@
   height: 624px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 60px 60px 60px 80px;
-  row-gap: 55px;
+  grid-template-rows: 90px 70px 70px 70px 60px;
+  row-gap: 45px;
   text-align: center;
   padding-left: 68px;
   padding-right: 68px; }
@@ -138,6 +137,7 @@
   height: 45px;
   width: 184px;
   border-radius: 22.5px;
+  align-items: auto;
   /*TO DO center button*/ }
 
 /*Third-section*/
@@ -186,5 +186,51 @@
 .components {
   text-transform: lowercase;
   padding-top: 20px; }
+
+/*MEDIA-QUERIES*/
+@media (min-width: 768px) {
+  .header_menu_container {
+    height: 44px;
+    width: 41.6px; }
+  .header_text_container {
+    width: 100%; }
+  .h1_text {
+    font-size: 80px; }
+  .hero_text {
+    font-size: 24px;
+    margin-right: 250px;
+    margin-left: 250px; }
+  .button_circle {
+    height: 45px;
+    width: 42.5px; }
+  .second_text {
+    font-size: 26px; }
+  .third-text {
+    font-size: 20px; }
+  .go_button {
+    width: 91px;
+    height: 45px; }
+  .second_section {
+    background-color: #eff9ff;
+    height: 397px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    text-align: center;
+    row-gap: 38px; }
+  .reason_one {
+    grid-column: 1/4;
+    font-size: 26px; }
+  .reason_three {
+    grid-column: 2/3; }
+  .first_paragraph {
+    font-size: 24px; }
+  .second_paragraph {
+    font-size: 20px; }
+  .reasons_button {
+    height: 45px;
+    width: 210px;
+    font-size: 20px; }
+  .footer {
+    flex-direction: row; } }
 
 /*# sourceMappingURL=main.css.map */
