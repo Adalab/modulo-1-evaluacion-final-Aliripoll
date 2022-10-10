@@ -87,7 +87,7 @@
   font-family: "RobotoSlab";
   font-weight: bold;
   text-transform: capitalize;
-  word-spacing: 3vw; /*REVISAR, NO es la mejor manera*/
+  word-spacing: 5vw; /*REVISAR, NO es la mejor manera*/
 }
 
 .third_text {
@@ -150,4 +150,54 @@
   height: 45px;
   width: 184px;
   border-radius: 22.5px;
+  /*TO DO center button*/
+}
+
+/*Third-section*/
+
+.footer {
+  background-color: #304268;
+  color: white;
+  text-transform: uppercase;
+  height: 465px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.arrow_button {
+  display: flex;
+  background-image: url("../images/ico-arrow.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transform: translateY(-25px);
+  position: relative;
+  margin: 0 auto;
+}
+.list_footer {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+.nav_list-one {
+  padding-top: 40px;
+}
+.nav_list-two {
+  padding-top: 30px;
+}
+.copy_container {
+  padding-top: 32px;
+}
+.components {
+  text-transform: lowercase;
+  padding-top: 20px;
 }
