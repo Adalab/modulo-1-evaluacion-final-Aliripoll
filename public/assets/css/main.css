@@ -236,9 +236,15 @@
     font-size: 20px; }
   /*FOOTER*/
   .footer {
-    border: 3px solid red; }
-  .list {
-    border: 2px solid black; } }
+    height: 240px; }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 39px;
+    padding-right: 39px; }
+  .copy_footer {
+    order: -1; } }
 
 /*Desktop*/
 /*HEADER*/
@@ -276,6 +282,9 @@
   .reasons_button {
     width: 255px;
     font-size: 20px; }
-  /*Footer*/ }
+  /*FOOTER*/
+  .footer {
+    padding-left: 170px;
+    padding-right: 170px; } }
 
 /*# sourceMappingURL=main.css.map */

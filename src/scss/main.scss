@@ -272,11 +272,18 @@
   /*FOOTER*/
 
   .footer {
-    border: 3px solid red;
+    height: 240px;
   }
 
-  .list {
-    border: 2px solid black;
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+  .copy_footer {
+    order: -1;
   }
 }
 
@@ -332,5 +339,9 @@
     font-size: 20px;
   }
 
-  /*Footer*/
+  /*FOOTER*/
+  .footer {
+    padding-left: 170px;
+    padding-right: 170px;
+  }
 }
