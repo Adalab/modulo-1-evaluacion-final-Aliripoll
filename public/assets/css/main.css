@@ -52,7 +52,12 @@
   width: 40px;
   height: 40px;
   position: relative;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-animation-name: change-position;
+  animation-name: change-position;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  cursor: pointer; }
 
 @media (min-width: 768px) {
   .header_menu_container {
@@ -78,6 +83,24 @@
   .button_circle {
     height: 45px;
     width: 45px; } }
+
+@-webkit-keyframes change-position {
+  10% {
+    transform: translateY(30px); }
+  40% {
+    transform: translateY(50px);
+    background-color: #2d56ad; }
+  75% {
+    transform: rotateX(180deg); } }
+
+@keyframes change-position {
+  10% {
+    transform: translateY(30px); }
+  40% {
+    transform: translateY(50px);
+    background-color: #2d56ad; }
+  75% {
+    transform: rotateX(180deg); } }
 
 .first_section {
   display: flex;
@@ -247,8 +270,8 @@
   margin: 0 auto;
   -webkit-animation-name: change-color;
   animation-name: change-color;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+  -webkit-animation: change-color 3s infinite;
+  animation: change-color 3s infinite;
   cursor: pointer; }
 
 .list_footer {
@@ -271,19 +294,19 @@
   color: #f26002; }
 
 @-webkit-keyframes change-color {
-  0% {
+  10% {
     transform: scaleY(1); }
-  30% {
-    transform: scaleY(2);
-    background-color: red;
+  50% {
+    transform: scaleX(1) scaleY(-1);
+    background-color: #2d56ad;
     opacity: 0.5; } }
 
 @keyframes change-color {
-  0% {
+  10% {
     transform: scaleY(1); }
-  30% {
-    transform: scaleY(2);
-    background-color: red;
+  50% {
+    transform: scaleX(1) scaleY(-1);
+    background-color: #2d56ad;
     opacity: 0.5; } }
 
 @media (min-width: 768px) {

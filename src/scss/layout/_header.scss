@@ -44,6 +44,9 @@
   height: $size-40px;
   position: relative;
   margin: 0 auto;
+  animation-name: change-position;
+  animation-duration: 5s;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -77,5 +80,18 @@
   .button_circle {
     height: 45px;
     width: 45px;
+  }
+}
+
+@keyframes change-position {
+  10% {
+    transform: translateY(30px);
+  }
+  40% {
+    transform: translateY(50px);
+    background-color: #2d56ad;
+  }
+  75% {
+    transform: rotateX(180deg);
   }
 }
