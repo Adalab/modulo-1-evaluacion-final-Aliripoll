@@ -48,6 +48,7 @@ $size-40px: 40px;
   flex-direction: column;
   padding-bottom: 25px;
 }
+
 .h1_text {
   font-size: 42px;
   font-family: $robotoslab-font;
@@ -111,6 +112,11 @@ $size-40px: 40px;
   padding-top: 4px;
   margin-top: 15px;
   text-align: center;
+  cursor: pointer;
+}
+.go_button:hover {
+  background-color: #304268;
+  opacity: 0.7;
 }
 
 /*second-section*/
@@ -152,6 +158,13 @@ $size-40px: 40px;
   width: 184px;
   border-radius: 22.5px;
   padding: 10px 25px 10px 25px;
+  cursor: pointer;
+  transition: background-color 1s linear;
+}
+.reasons_button:hover {
+  background-color: #0271bc;
+  margin-top: 50px;
+  opacity: 0.8;
 }
 /*footer*/
 
@@ -176,6 +189,9 @@ $size-40px: 40px;
   transform: translateY(-25px);
   position: relative;
   margin: 0 auto;
+  animation-name: change-color;
+  animation-duration: 2s;
+  cursor: pointer;
 }
 .list_footer {
   display: flex;
@@ -183,20 +199,18 @@ $size-40px: 40px;
   flex-direction: column;
   text-align: center;
   gap: 10px;
+  padding-top: $size-40px;
 }
 .link {
   text-decoration: none;
   color: $white-color;
 }
-.nav_list-one {
-  padding-top: $size-40px;
-}
-.nav_list-two {
-  padding-top: 30px;
-}
 .copy_footer {
   padding-top: 32px;
   text-transform: lowercase;
+}
+.heart {
+  color: $orange-color;
 }
 
 /*MEDIA-QUERIES:Tablet*/
@@ -245,11 +259,11 @@ $size-40px: 40px;
     text-align: center;
     row-gap: 38px;
   }
-  .reason_one {
+  .h2_title {
     grid-column: 1/4;
     font-size: 26px;
   }
-  .reason_three {
+  .div_button {
     grid-column: 2/3;
   }
   .first_paragraph {
@@ -337,5 +351,16 @@ $size-40px: 40px;
   .footer {
     padding-left: 170px;
     padding-right: 170px;
+  }
+}
+
+@keyframes change-color {
+  0% {
+    transform: scaleY(1);
+  }
+  30% {
+    transform: scaleY(2);
+    background-color: red;
+    opacity: 0.5;
   }
 }
