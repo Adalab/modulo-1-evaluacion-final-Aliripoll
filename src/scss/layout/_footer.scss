@@ -7,6 +7,7 @@
   flex-direction: column;
   text-align: center;
 }
+
 .arrow_button {
   display: flex;
   background-image: url("../images/ico-arrow.svg");
@@ -23,6 +24,11 @@
   animation: change-color 3s infinite;
   cursor: pointer;
 }
+
+.arrow_button:hover {
+  animation: 0;
+}
+
 .list_footer {
   display: flex;
   list-style: none;
@@ -31,14 +37,18 @@
   gap: 10px;
   padding-top: $size-40px;
 }
+
 .link {
   text-decoration: none;
   color: $white-color;
 }
+
 .copy_footer {
-  padding-top: 32px;
+  text-align: center;
+  padding-top: 40px;
   text-transform: lowercase;
 }
+
 .heart {
   color: $orange-color;
 }
@@ -65,14 +75,18 @@
     padding-left: 39px;
     padding-right: 39px;
   }
+  .list_footer {
+    text-align: left;
+  }
   .copy_footer {
     order: -1;
+    text-align: left;
   }
 }
 
 @media (min-width: 1200px) {
   .footer {
-    padding-left: 170px;
-    padding-right: 170px;
+    padding-left: 300px;
+    padding-right: 300px;
   }
 }

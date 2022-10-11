@@ -17,7 +17,7 @@
 
 .second_text {
   font-size: $size-24px;
-  font-family: $robotoslab-font;
+  font-family: $roboto-slab-font;
   font-weight: bold;
   text-transform: $capitalize-text;
 }
@@ -62,7 +62,7 @@
 
 .h2_title {
   font-size: $size-24px;
-  font-family: $robotoslab-font;
+  font-family: $roboto-slab-font;
   text-transform: $capitalize-text;
   padding-top: 29px;
 }
@@ -70,7 +70,7 @@
 .first_paragraph {
   font-size: 18px;
   color: black;
-  font-family: $robotoslab-font;
+  font-family: $roboto-slab-font;
   font-weight: bold;
 }
 .second_paragraph {
@@ -97,6 +97,11 @@
 @media (min-width: 768px) {
   /*first-section*/
 
+  .first_section {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
   .second_text {
     font-size: 26px;
   }
@@ -115,7 +120,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 100px 100px;
     text-align: center;
-    row-gap: 38px;
+    column-gap: 15px;
+    row-gap: 35px;
   }
   .h2_title {
     grid-column: 1/4;
