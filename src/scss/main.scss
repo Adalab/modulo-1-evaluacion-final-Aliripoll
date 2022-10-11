@@ -92,7 +92,6 @@ $size-40px: 40px;
   font-family: $robotoslab-font;
   font-weight: bold;
   text-transform: $capitalize-text;
-  /*word-spacing: 5vw; /*REVISAR, NO es la mejor manera*/
 }
 
 .third_text {
@@ -136,7 +135,6 @@ $size-40px: 40px;
 }
 
 .first_paragraph {
-  display: grid;
   font-size: 18px;
   color: black;
   font-family: $robotoslab-font;
@@ -146,7 +144,6 @@ $size-40px: 40px;
   font-size: 18px;
 }
 .reasons_button {
-  display: grid;
   background-color: $orange-color;
   color: $white-color;
   font-size: $size-20px;
@@ -154,10 +151,8 @@ $size-40px: 40px;
   height: 45px;
   width: 184px;
   border-radius: 22.5px;
-
-  /*TO DO center button*/
+  padding: 10px 25px 10px 25px;
 }
-
 /*footer*/
 
 .footer {
@@ -183,8 +178,8 @@ $size-40px: 40px;
   margin: 0 auto;
 }
 .list_footer {
-  list-style: none;
   display: flex;
+  list-style: none;
   flex-direction: column;
   text-align: center;
   gap: 10px;
@@ -199,12 +194,9 @@ $size-40px: 40px;
 .nav_list-two {
   padding-top: 30px;
 }
-.copy_container {
+.copy_footer {
   padding-top: 32px;
-}
-.components {
   text-transform: lowercase;
-  padding-top: $size-20px;
 }
 
 /*MEDIA-QUERIES:Tablet*/

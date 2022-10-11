@@ -11,9 +11,7 @@
   margin: 0;
   padding: 0; }
 
-:root {
-  font-family: "Roboto"; }
-
+/*Variables*/
 /*HEADER*/
 .image_container {
   background-image: url("../images/cover.jpeg");
@@ -43,7 +41,7 @@
 
 .h1_text {
   font-size: 42px;
-  font-family: "RobotoSlab";
+  font-family: "RobotoSlab-Bold";
   text-transform: uppercase; }
 
 .button_circle {
@@ -77,10 +75,9 @@
 
 .second_text {
   font-size: 24px;
-  font-family: "RobotoSlab";
+  font-family: "RobotoSlab-Bold";
   font-weight: bold;
-  text-transform: capitalize;
-  /*word-spacing: 5vw; /*REVISAR, NO es la mejor manera*/ }
+  text-transform: capitalize; }
 
 .third_text {
   color: #4a4a4a;
@@ -113,23 +110,20 @@
 
 .h2_title {
   font-size: 24px;
-  font-family: "RobotoSlab";
+  font-family: "RobotoSlab-Bold";
   text-transform: capitalize;
   padding-top: 29px; }
 
 .first_paragraph {
-  display: grid;
   font-size: 18px;
   color: black;
-  font-family: "RobotoSlab";
+  font-family: "RobotoSlab-Bold";
   font-weight: bold; }
 
 .second_paragraph {
-  font-size: 18px;
-  font-family: "Roboto-Regular"; }
+  font-size: 18px; }
 
 .reasons_button {
-  display: grid;
   background-color: #f26002;
   color: white;
   font-size: 20px;
@@ -137,8 +131,7 @@
   height: 45px;
   width: 184px;
   border-radius: 22.5px;
-  align-items: auto;
-  /*TO DO center button*/ }
+  padding: 10px 25px 10px 25px; }
 
 /*footer*/
 .footer {
@@ -164,8 +157,8 @@
   margin: 0 auto; }
 
 .list_footer {
-  list-style: none;
   display: flex;
+  list-style: none;
   flex-direction: column;
   text-align: center;
   gap: 10px; }
@@ -180,12 +173,9 @@
 .nav_list-two {
   padding-top: 30px; }
 
-.copy_container {
-  padding-top: 32px; }
-
-.components {
-  text-transform: lowercase;
-  padding-top: 20px; }
+.copy_footer {
+  padding-top: 32px;
+  text-transform: lowercase; }
 
 /*MEDIA-QUERIES:Tablet*/
 /*Header*/
