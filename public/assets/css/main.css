@@ -105,7 +105,7 @@
   height: 624px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 90px 70px 70px 70px 60px;
+  grid-template-rows: 90px 70px 70px 70px 70px;
   row-gap: 45px;
   text-align: center;
   padding-left: 68px;
@@ -262,6 +262,20 @@
   .third_text {
     font-size: 20px; }
   .go_button {
-    width: 160px; } }
+    width: 160px; }
+  /*second-section*/
+  .second_section {
+    padding-left: 81px;
+    padding-right: 81px; }
+  .h2_title {
+    font-size: 32px; }
+  .first_paragraph {
+    font-size: 24px; }
+  .second_paragraph {
+    font-size: 20px; }
+  .reasons_button {
+    width: 255px;
+    font-size: 20px; }
+  /*Footer*/ }
 
 /*# sourceMappingURL=main.css.map */
