@@ -1,8 +1,78 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer {
+  background-color: #304268;
+  color: $white-color;
+  text-transform: uppercase;
+  height: 465px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.arrow_button {
+  display: flex;
+  background-image: url("../images/ico-arrow.svg");
+  background-position: $background-center;
+  background-repeat: no-repeat;
+  background-color: $white-color;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transform: translateY(-25px);
+  position: relative;
+  margin: 0 auto;
+  animation-name: change-color;
+  animation-duration: 3s;
+  cursor: pointer;
+}
+.list_footer {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  padding-top: $size-40px;
+}
+.link {
+  text-decoration: none;
+  color: $white-color;
+}
+.copy_footer {
+  padding-top: 32px;
+  text-transform: lowercase;
+}
+.heart {
+  color: $orange-color;
+}
+
+@keyframes change-color {
+  0% {
+    transform: scaleY(1);
+  }
+  30% {
+    transform: scaleY(2);
+    background-color: red;
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    height: 240px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+  .copy_footer {
+    order: -1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding-left: 170px;
+    padding-right: 170px;
+  }
 }

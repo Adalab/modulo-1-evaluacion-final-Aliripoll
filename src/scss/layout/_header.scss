@@ -1,5 +1,81 @@
-.page__header {
+.image_container {
+  background-image: url("../images/cover.jpeg");
+  max-width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: $background-center;
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+}
+
+.header_menu_container {
+  background-image: url("../images/ico-menu.svg");
+  background-color: #0271bc;
+  background-repeat: no-repeat;
+  background-position: $background-center;
+  height: 22px;
+  width: 37px;
+  position: fixed;
+}
+
+.header_text_container {
+  color: $white-color;
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+  gap: 15px;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+
+.h1_text {
+  font-size: 42px;
+  font-family: $robotoslab-font;
+  text-transform: uppercase;
+}
+
+.button_circle {
+  display: flex;
+  background-image: url("../images/ico-scroll-down.svg");
+  border-radius: 50%;
+  background-position: $background-center;
+  background-repeat: no-repeat;
+  background-color: $white-color;
+  width: $size-40px;
+  height: $size-40px;
+  position: relative;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .header_menu_container {
+    height: 44px;
+    width: 41.6px;
+  }
+  .header_text_container {
+    width: 100%;
+  }
+  .h1_text {
+    font-size: 80px;
+  }
+  .hero_text {
+    font-size: $size-24px;
+    margin-right: 250px;
+    margin-left: 250px;
+  }
+  .button_circle {
+    height: 45px;
+    width: 42.5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .h1_text {
+    font-size: 100px;
+    padding-left: 275px;
+    padding-right: 275px;
+  }
+  .button_circle {
+    height: 45px;
+    width: 45px;
+  }
 }
